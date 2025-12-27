@@ -1,27 +1,112 @@
 {
   "name": "errorsense",
-  "displayName": "errorsense",
-  "description": "Helps developers understand common runtime and compile-time errors with clear explanations and practical suggestions.",
+  "displayName": "ErrorSense",
+  "description": "Explain common runtime and compile-time errors in simple language with clear explanations and practical suggestions.",
   "version": "0.0.1",
+  "publisher": "pandiyan",
+  "icon": "icon.png",
+
   "engines": {
     "vscode": "^1.107.0"
   },
+
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
-  "main": "./extension.js",
-  "contributes": {
-    "commands": [{
-      "command": "errorsense.helloWorld",
-      "title": "ErrorSense: Explain Error"
-    }]
+
+  "keywords": [
+    "error",
+    "debugging",
+    "developer-tools",
+    "javascript",
+    "learning"
+  ],
+
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
   },
+
+  "activationEvents": [
+    "onCommand:errorsense.helloWorld"
+  ],
+
+  "main": "./extension.js",
+
+  "contributes": {
+    "commands": [
+      {
+        "command": "errorsense.helloWorld",
+        "title": "ErrorSense: Explain Error"
+      }
+    ]
+  },
+
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
     "test": "vscode-test"
   },
+
+  "devDependencies": {
+    "@types/vscode": "^1.107.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "eslint": "^9.39.1",
+    "@vscode/test-cli": "^0.0.12",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
+{
+  "name": "errorsense",
+  "displayName": "ErrorSense",
+  "description": "Explain common runtime and compile-time errors in simple language with clear explanations and practical suggestions.",
+  "version": "0.0.1",
+  "publisher": "pandiyan",
+  "icon": "icon.png",
+
+  "engines": {
+    "vscode": "^1.107.0"
+  },
+
+  "categories": [
+    "Other"
+  ],
+
+  "keywords": [
+    "error",
+    "debugging",
+    "developer-tools",
+    "javascript",
+    "learning"
+  ],
+
+  "galleryBanner": {
+    "color": "#1e1e1e",
+    "theme": "dark"
+  },
+
+  "activationEvents": [
+    "onCommand:errorsense.helloWorld"
+  ],
+
+  "main": "./extension.js",
+
+  "contributes": {
+    "commands": [
+      {
+        "command": "errorsense.helloWorld",
+        "title": "ErrorSense: Explain Error"
+      }
+    ]
+  },
+
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+
   "devDependencies": {
     "@types/vscode": "^1.107.0",
     "@types/mocha": "^10.0.10",
